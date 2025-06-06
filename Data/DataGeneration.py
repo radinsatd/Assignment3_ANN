@@ -20,7 +20,7 @@ employees = [{"id": "E1", "hours_avail": 10, "skill_level": 4, "skills": ["A", "
             {"id": "E4", "hours_avail": 15, "skill_level": 7, "skills": ["B", "C"]},
             {"id": "E5", "hours_avail": 9, "skill_level": 5, "skills": ["A", "C"]}]
 
-def generate_assignments_csv(seed):
+def generate_data_csv(seed):
     num_samples = 100
     output_file = "assignment3_data.csv"
     
@@ -120,4 +120,4 @@ def evaluate_penalty(tasks, employees, assignment):
 
 if __name__ == '__main__':
     seed = input("Enter seed for task-assignment data generation: ")
-    generate_assignments_csv(seed)
+    generate_data_csv(seed)
